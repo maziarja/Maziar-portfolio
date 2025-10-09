@@ -84,7 +84,7 @@ function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                     href={selectedProject.liveUrl}
-                    className="rounded-lg border-1 px-2 py-1 transition-all duration-300 hover:ring hover:ring-white md:border-0"
+                    className="rounded-lg border-1 px-2 py-1 transition-all duration-300 hover:ring hover:ring-white lg:border-0"
                   >
                     View live
                   </a>
