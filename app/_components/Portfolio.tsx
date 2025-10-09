@@ -49,18 +49,16 @@ function Portfolio() {
                   }`}
                 >
                   {showProjectDetails && selectedProject.id === project.id ? (
-                    <TiArrowSortedDown className="inline-block lg:hidden" />
+                    <TiArrowSortedDown className="inline-block" />
                   ) : (
-                    <MdPlayArrow className="inline-block lg:hidden" />
+                    <MdPlayArrow className="inline-block" />
                   )}{" "}
                   {project.title}
                 </h3>
-                {selectedProject.id === project.id && showProjectDetails && (
-                  <div className="my-4 hidden border-b-2 border-gray-300 lg:block"></div>
-                )}
+
                 {selectedProject.id === project.id && showProjectDetails && (
                   <p
-                    className={`ml-4 text-gray-400 transition-all duration-500 ease-in-out lg:ml-0 ${
+                    className={`ml-4 text-gray-400 transition-all duration-500 ease-in-out ${
                       selectedProject.id === project.id
                         ? "opacity-100"
                         : "opacity-0"
@@ -95,7 +93,7 @@ function Portfolio() {
                     </motion.a>
                   </motion.div>
                 )}
-                <div className="mt-3 ml-4 flex items-center gap-4 lg:ml-0">
+                <div className="mt-3 ml-4 flex items-center gap-4">
                   {selectedProject.id === project.id && showProjectDetails && (
                     <a
                       target="_blank"
