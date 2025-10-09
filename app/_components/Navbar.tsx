@@ -16,8 +16,8 @@ function Navbar() {
   const closeNav = () => setNav(false);
 
   return (
-    <div className="fixed z-50 flex w-full justify-center font-bold text-white mix-blend-difference">
-      <div className="mx-auto mt-2 hidden max-w-[400px] items-center justify-center rounded-3xl border border-white/20 p-2 md:flex">
+    <div className="fixed z-50 flex w-full justify-center font-bold text-white lg:mix-blend-difference">
+      <div className="mx-auto mt-2 hidden max-w-[400px] items-center justify-center rounded-3xl border border-white/20 p-2 backdrop-blur-3xl md:flex">
         <ul className="flex flex-row space-x-8 p-2">
           {navLinks.map((link, index) => (
             <li key={index}>
