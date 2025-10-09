@@ -57,7 +57,7 @@ function Portfolio() {
                 {selectedProject.id === project.id && (
                   <motion.div
                     key={selectedProject.id}
-                    className="my-2 flex items-center justify-center p-12 lg:hidden"
+                    className="my-2 flex items-center justify-center p-4 sm:p-12 lg:hidden"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0, scale: 0.98 }}
