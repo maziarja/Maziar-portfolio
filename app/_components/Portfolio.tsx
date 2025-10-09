@@ -130,20 +130,22 @@ function Portfolio() {
             transition={{ duration: 0.2, ease: "easeInOut" }}
             className="hidden items-center justify-center lg:flex lg:h-[650px]"
           >
-            <a
-              className="cursor-pointer rounded-xl"
-              target="_blank"
-              rel="noopener noreferrer"
-              href={selectedProject.liveUrl}
-            >
-              <Image
-                src={selectedProject.image.src}
-                alt={selectedProject.title}
-                className="rounded-xl shadow-lg transition-opacity duration-500 ease-in-out"
-                width={800}
-                height={450}
-              />
-            </a>
+            {showProjectDetails && (
+              <a
+                className="cursor-pointer rounded-xl"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={selectedProject.liveUrl}
+              >
+                <Image
+                  src={selectedProject.image.src}
+                  alt={selectedProject.title}
+                  className="rounded-xl shadow-lg transition-opacity duration-500 ease-in-out"
+                  width={800}
+                  height={450}
+                />
+              </a>
+            )}
           </motion.div>
         </AnimatePresence>
       </div>
