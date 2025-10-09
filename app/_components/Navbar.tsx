@@ -16,8 +16,8 @@ function Navbar() {
   const closeNav = () => setNav(false);
 
   return (
-    <div className="fixed z-50 flex w-full justify-center font-bold text-white">
-      <div className="mx-auto mt-2 hidden max-w-[400px] items-center justify-center rounded-3xl border border-white/20 p-2 backdrop-blur-3xl md:flex">
+    <div className="fixed z-50 flex w-full justify-center font-bold text-white mix-blend-difference">
+      <div className="mx-auto mt-2 hidden max-w-[400px] items-center justify-center rounded-3xl border border-white/20 p-2 md:flex">
         <ul className="flex flex-row space-x-8 p-2">
           {navLinks.map((link, index) => (
             <li key={index}>
@@ -34,7 +34,7 @@ function Navbar() {
 
       <button
         onClick={toggleNav}
-        className="absolute top-5 right-14 z-50 cursor-pointer rounded border border-white/70 p-2 text-white/70 md:hidden"
+        className="absolute top-5 right-4.5 z-50 cursor-pointer rounded p-2 text-white/70 md:hidden"
       >
         {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
       </button>

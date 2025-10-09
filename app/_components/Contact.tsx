@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { GoArrowUpRight } from "react-icons/go";
 
 function Contact() {
   return (
@@ -33,10 +34,10 @@ function Contact() {
               <p className="text-lg text-gray-300">Email</p>
               <a
                 href="mailto:maziar.ja@gmail.com"
-                className="flex items-center gap-2 text-3xl font-semibold transition duration-300 hover:text-gray-400 lg:text-4xl"
+                className="flex items-center gap-2 text-2xl font-semibold transition duration-300 hover:text-gray-400 md:text-3xl lg:text-4xl"
               >
                 maziar.ja@gmail.com
-                <span className="text-gray-500">↗</span>
+                <GoArrowUpRight className="text-gray-500" />
               </a>
             </div>
           </motion.div>
