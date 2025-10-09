@@ -4,10 +4,13 @@ import { AnimatePresence, motion, useMotionValue } from "motion/react";
 import { PROJECTS } from "@/app/const";
 import { useColor } from "../hooks/useColor";
 import Image from "next/image";
+import { TiArrowSortedDown } from "react-icons/ti";
+import { MdPlayArrow } from "react-icons/md";
 
 function Portfolio() {
   const { backgroundImage, boxShadow } = useColor(true);
   const [selectedProject, setSelectedProject] = useState(PROJECTS[0]);
+  const [showProjectDetails, setShowProjectDetails] = useState(false);
   const image = useMotionValue(PROJECTS[0].image);
 
   return (
@@ -18,7 +21,7 @@ function Portfolio() {
     >
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 lg:grid-cols-2">
         <div>
-          <h2 className="mb-10 text-6xl font-bold">
+          <h2 className="mb-14 text-5xl font-bold">
             Selected <span className="text-gray-300">projects</span>
           </h2>
 
@@ -33,19 +36,31 @@ function Portfolio() {
                 className="group mb-8"
               >
                 <p className="mb-2 text-lg text-gray-300">{project.year}</p>
+
                 <h3
-                  className={`cursor-pointer text-3xl font-semibold transition-colors duration-300 group-hover:text-gray-500 ${
+                  role="button"
+                  onClick={() =>
+                    setShowProjectDetails((show) =>
+                      selectedProject.id === project.id ? !show : true,
+                    )
+                  }
+                  className={`mb-4 cursor-pointer text-2xl font-semibold transition-colors duration-300 group-hover:text-gray-500 sm:text-3xl ${
                     selectedProject.id === project.id ? "text-gray-300" : ""
                   }`}
                 >
+                  {showProjectDetails && selectedProject.id === project.id ? (
+                    <TiArrowSortedDown className="inline-block lg:hidden" />
+                  ) : (
+                    <MdPlayArrow className="inline-block lg:hidden" />
+                  )}{" "}
                   {project.title}
                 </h3>
-                {selectedProject.id === project.id && (
-                  <div className="my-4 border-b-2 border-gray-300"></div>
+                {selectedProject.id === project.id && showProjectDetails && (
+                  <div className="my-4 hidden border-b-2 border-gray-300 lg:block"></div>
                 )}
-                {selectedProject.id === project.id && (
+                {selectedProject.id === project.id && showProjectDetails && (
                   <p
-                    className={`text-gray-400 transition-all duration-500 ease-in-out ${
+                    className={`ml-4 text-gray-400 transition-all duration-500 ease-in-out lg:ml-0 ${
                       selectedProject.id === project.id
                         ? "opacity-100"
                         : "opacity-0"
@@ -54,7 +69,7 @@ function Portfolio() {
                     {project.description}
                   </p>
                 )}
-                {selectedProject.id === project.id && (
+                {selectedProject.id === project.id && showProjectDetails && (
                   <motion.div
                     key={selectedProject.id}
                     className="my-2 flex items-center justify-center p-4 sm:p-12 lg:hidden"
@@ -80,8 +95,8 @@ function Portfolio() {
                     </motion.a>
                   </motion.div>
                 )}
-                <div className="mt-3 flex items-center gap-4">
-                  {selectedProject.id === project.id && (
+                <div className="mt-3 ml-4 flex items-center gap-4 lg:ml-0">
+                  {selectedProject.id === project.id && showProjectDetails && (
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -91,7 +106,7 @@ function Portfolio() {
                       View live
                     </a>
                   )}
-                  {selectedProject.id === project.id && (
+                  {selectedProject.id === project.id && showProjectDetails && (
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
