@@ -15,6 +15,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import personalFinanceAppImage from "@/public/images/personal-finance-app.jpg";
 import kanbanTaskManagementImage from "@/public/images/kanban-task-management.jpg";
 import moodTrackingImage from "@/public/images/mood-tracking.jpg";
+import productFeedbackApp from "@/public/images/product-feedback-app.png";
 
 // ************* APP COLORS *****************
 export const APP_COLORS = ["#1E1E1E", "#3A3A3A", "#0F52BA", "#0077B6"];
@@ -96,6 +97,16 @@ export const PROJECTS = [
   {
     id: 2,
     year: 2025,
+    title: "Product Feedback App",
+    description:
+      "Built a full-featured product feedback application inspired by a Frontend Mentor challenge. Users can create, edit, and upvote feedback posts, add comments, and manage feedback status across different roadmap stages. Implemented with Next.js, TypeScript, MongoDB, and Tailwind CSS, the app features dynamic routing, authentication, and responsive design for an intuitive user experience.",
+    image: productFeedbackApp,
+    liveUrl: "https://feedback-product-dusky.vercel.app",
+    codeUrl: "https://github.com/maziarja/feedback-product",
+  },
+  {
+    id: 3,
+    year: 2025,
     title: "Interactive Kanban Board",
     description:
       "Created a responsive Kanban board application that allows users to organize tasks into columns, facilitating efficient project management.",
@@ -104,7 +115,7 @@ export const PROJECTS = [
     codeUrl: "https://github.com/maziarja/kanban-task-management",
   },
   {
-    id: 3,
+    id: 4,
     year: 2025,
     title: "Mood Tracker",
     description:
