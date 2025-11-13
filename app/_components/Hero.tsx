@@ -49,7 +49,7 @@ function Hero() {
           </p>
           <p className="text-4xl font-bold md:text-5xl">Hi, I am</p>
           <p className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-4xl font-bold text-transparent md:text-6xl">
-            Maziar Ja
+            Maziar Jamali Alem
           </p>
           <p className="mt-4 max-w-[400px] text-base">
             Front-End Developer passionate about creating interactive and
