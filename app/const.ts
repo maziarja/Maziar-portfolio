@@ -12,10 +12,10 @@ import {
 
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
-import personalFinanceAppImage from "@/public/images/personal-finance-app.jpg";
-import kanbanTaskManagementImage from "@/public/images/kanban-task-management.jpg";
-import moodTrackingImage from "@/public/images/mood-tracking.jpg";
-import productFeedbackApp from "@/public/images/product-feedback-app.png";
+import finio from "@/public/images/projects/finio.png";
+import noteTakingWebApp from "@/public/images/projects/note-taking-web-app.png";
+import frontPage from "@/public/images/projects/frontPage.png";
+import ipass from "@/public/images/projects/ipass.png";
 
 // ************* APP COLORS *****************
 export const APP_COLORS = ["#1E1E1E", "#3A3A3A", "#0F52BA", "#0077B6"];
@@ -86,43 +86,43 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     id: 1,
-    year: 2025,
-    title: "Personal Finance Dashboard",
+    year: 2026,
+    title: "Finio",
     description:
-      "Developed a comprehensive personal finance dashboard that enables users to track expenses, set budgets, and manage recurring bills. Implemented dynamic data visualization using charts and graphs, providing users with clear insights into their financial health.",
-    image: personalFinanceAppImage,
-    liveUrl: "https://personal-finance-app-virid.vercel.app",
-    codeUrl: "https://github.com/maziarja/personal-finance-app",
+      "A full-stack personal finance tracker built with Next.js, Prisma, and Neon Postgres — featuring auth, transactions, P2P transfers, budgets, and goals. Logic implemented by me, UI crafted with Claude Code.",
+    image: finio,
+    liveUrl: "https://my-personal-finance-ten.vercel.app",
+    codeUrl: "https://github.com/maziarja/my-personal-finance",
   },
   {
     id: 2,
-    year: 2025,
-    title: "Product Feedback App",
+    year: 2026,
+    title: "I pass",
     description:
-      "Built a full-featured product feedback application inspired by a Frontend Mentor challenge. Users can create, edit, and upvote feedback posts, add comments, and manage feedback status across different roadmap stages. Implemented with Next.js, TypeScript, MongoDB, and Tailwind CSS, the app features dynamic routing, authentication, and responsive design for an intuitive user experience.",
-    image: productFeedbackApp,
-    liveUrl: "https://feedback-product-dusky.vercel.app",
-    codeUrl: "https://github.com/maziarja/feedback-product",
+      "iPass — A full-stack password manager built with Next.js and Node.js/Express, featuring AES-256-GCM client-side encryption, JWT auth, and a Neon PostgreSQL database.",
+    image: ipass,
+    liveUrl: "https://ipass-gray.vercel.app",
+    codeUrl: "https://github.com/maziarja/Ipass",
   },
   {
     id: 3,
-    year: 2025,
-    title: "Interactive Kanban Board",
+    year: 2026,
+    title: "Note Taking Web App",
     description:
-      "Created a responsive Kanban board application that allows users to organize tasks into columns, facilitating efficient project management.",
-    image: kanbanTaskManagementImage,
-    liveUrl: "https://kanban-task-management-sigma-umber.vercel.app",
-    codeUrl: "https://github.com/maziarja/kanban-task-management",
+      "Full-stack note-taking app built with Next.js, MongoDB, and NextAuth — featuring CRUD operations, archiving, tag-based filtering, full-text search, Google OAuth, and customizable font/color themes, responsive UI.",
+    image: noteTakingWebApp,
+    liveUrl: "https://note-taking-web-app-v2-amber.vercel.app",
+    codeUrl: "https://github.com/maziarja/note-taking-web-app-v2",
   },
   {
     id: 4,
-    year: 2025,
-    title: "Mood Tracker",
+    year: 2026,
+    title: "Front Page",
     description:
-      "Built a mood tracking application enabling users to log daily emotions and activities. Incorporated data visualization tools to help users identify mood patterns over time, promoting self-awareness and well-being.",
-    image: moodTrackingImage,
-    liveUrl: "https://mood-tracking-eight.vercel.app",
-    codeUrl: "https://github.com/maziarja/mood-tracking",
+      "Frontpage — A full-stack RSS reader with AI-powered article summarization, built with Next.js 16, Prisma, and Better Auth. Developed with Claude Code, featuring multi-format feed parsing, read/unread tracking, category organization, and Groq-backed summarization.",
+    image: frontPage,
+    liveUrl: "https://frontpage-kohl.vercel.app",
+    codeUrl: "https://github.com/maziarja/frontpage",
   },
 ];
 
