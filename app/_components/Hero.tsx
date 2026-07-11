@@ -52,8 +52,8 @@ function Hero() {
             Maziar JA
           </p>
           <p className="mt-4 max-w-[400px] text-base">
-            Front-End Developer passionate about creating interactive and
-            engaging web experiences.
+            Full-Stack Developer passionate about building complete web
+            applications — from database design to polished user interfaces.
           </p>
 
           <div className="mt-6 flex flex-col gap-6 md:flex-row">

@@ -35,13 +35,14 @@ function About() {
             <div className="space-y-6 rounded-lg border border-gray-800 p-6 transition-colors duration-300 hover:border-gray-500/50">
               <p className="text-2xl font-semibold text-gray-300">My Journey</p>
               <p className="text-lg leading-relaxed text-gray-300">
-                I&#39;m a dedicated Front-End Developer who began learning web
+                I&#39;m a dedicated Full-Stack Developer who began learning web
                 development in 2023. Since then, I&#39;ve completed over twenty
                 projects — including several Frontend Mentor challenges — and
-                developed multiple full-stack applications using Next.js and
-                Mongoose. I take pride in transforming ideas into complete,
-                responsive, and high-performing web experiences with clean,
-                maintainable code.
+                built full-stack applications using Next.js with both
+                PostgreSQL/Prisma and MongoDB/Mongoose. I take pride in
+                transforming ideas into complete, responsive, and
+                high-performing web experiences with clean, maintainable code on
+                both frontend and backend.
               </p>
               <p className="text-lg leading-relaxed text-gray-300">
                 I&#39;m passionate about continuous learning and exploring

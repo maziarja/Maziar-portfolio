@@ -1,13 +1,20 @@
 import { FaReact } from "react-icons/fa";
-import { FiCode, FiGitBranch, FiLayers, FiServer } from "react-icons/fi";
+import {
+  FiCode,
+  FiDatabase,
+  FiGitBranch,
+  FiLayers,
+  FiServer,
+} from "react-icons/fi";
 
 import {
-  SiFramer,
   SiNextdotjs,
   SiTailwindcss,
   SiMongodb,
   SiTypescript,
   SiFrontendmentor,
+  SiPrisma,
+  SiExpress,
 } from "react-icons/si";
 
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
@@ -30,7 +37,7 @@ export const STACK_ITEMS = [
   {
     name: "Next.js",
     icon: SiNextdotjs,
-    color: "#000000",
+    color: "#FFFFFF",
   },
   {
     name: "TypeScript",
@@ -38,14 +45,19 @@ export const STACK_ITEMS = [
     color: "#3178C6",
   },
   {
+    name: "Express",
+    icon: SiExpress,
+    color: "#404040",
+  },
+  {
     name: "Tailwind",
     icon: SiTailwindcss,
     color: "#06B6D4",
   },
   {
-    name: "Framer",
-    icon: SiFramer,
-    color: "#0055FF",
+    name: "Prisma",
+    icon: SiPrisma,
+    color: "#0C344B",
   },
   {
     name: "MongoDB",
@@ -66,7 +78,13 @@ export const SKILLS = [
     icon: FiServer,
     title: "Full-Stack Projects",
     description:
-      "Developing complete web applications with Next.js and Mongoose, handling both frontend and backend with clean and scalable architecture.",
+      "Building complete web applications with Next.js, Node.js, and PostgreSQL/Prisma — handling frontend, backend, and database layers with clean, scalable architecture.",
+  },
+  {
+    icon: FiDatabase,
+    title: "Database Design",
+    description:
+      "Experienced with both relational (PostgreSQL/Prisma) and NoSQL (MongoDB/Mongoose) databases across 10+ projects, choosing the right tool for each project's needs.",
   },
   {
     icon: FiLayers,
