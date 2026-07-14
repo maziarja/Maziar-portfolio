@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { GoArrowUpRight } from "react-icons/go";
+import EmailForm from "./EmailForm";
 
 function Contact() {
   return (
@@ -40,6 +41,7 @@ function Contact() {
                 <GoArrowUpRight className="text-gray-500" />
               </a>
             </div>
+            <EmailForm />
           </motion.div>
         </div>
       </motion.div>
