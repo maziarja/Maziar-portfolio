@@ -13,7 +13,7 @@ export async function submitContactForm(data: SendEmailType) {
   }
   const { error } = await resend.batch.send([
     {
-      from: "Maziar <hello@mazdev.dev>",
+      from: "Portfolio Contact <hello@mazdev.dev>",
       to: ["maziar.ja@gmail.com"],
       replyTo: parsed.data.email,
       subject: parsed.data.subject,
